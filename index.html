@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sailesh Mahat - Portfolio Website</title>
+      <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.production.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <header class="page-header">
+      <a name="home"></a>
+      <div class="homebanner">
+        <div class="profile">
+          <img src="img/portrait2.jpg" class="profile__portrait" alt="sailesh-mahat-portrait">
+            <h1 class="name-heading">Sailesh Mahat</h1>
+            <h2 class="sub-heading">Full-Stack Web Developer</h2>
+        </div>
+      </div>
+    </header>
+  <a name="about"></a>
+  <section id="about-container">
+  <div class="profile">
+    <h2>Hello there. </h2><h3 style="font-style: italic">I am a full-stack <span class="web">&ltweb&gt </span> developer based in Dusseldorf,
+      Germany. I love to design and develop engaging websites, web apps and mobile apps. I am available for
+      freelance or contract work. <br>
+       My hobbies include photography and hiking</h3>
+  </div>
+  <div class="intro-buttons">
+      <button onclick="location.href='#contact'" class="button__secondary">Contact me!</button>
+      <button onclick="location.href='#work'">Check out my work!</button>
+      <button onclick="location.href='files/Mahat, Sailesh-Resume.pdf'">Download my CV</button>
+  </div>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://twitter.com/slashmahat"><img src="img/iconmonstr-twitter-3.svg" alt="Twitter logo"></a>
+        <a href="https://github.com/sailesh-mahat"><img src="img/iconmonstr-github-1.svg" alt="Github logo"></a>
+        <a href="https://www.linkedin.com/in/sailesh-mahat-79518b53/"><img src="img/iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></a>
+      </div>
+    </footer>
+  </section>
+    <div class="skills">
+      <h1 style="text-align:center">Skills</h1>
+      <div style="overflow-x:auto;">
+        <table class="t1">
+          <tr>
+            <th><img src="img/HTML5_Logo.png"></th>
+            <th><img src="img/csslogo.png"></th>
+            <th><img src="img/javascript_logo.png"></th>
+            <th><img src="img/jquery-icon.png"></th>
+          </tr>
+          <tr>
+            <th><img src="img/react.png" style="width:200px;height:230px"></th>
+            <th><img src="img/angularjs.png"></th>
+            <th><img src="img/vuejs.png" style="width:150px;height:150px"></th>
+            <th><img src="img/bootstrap.png"></th>
+          </tr>
+          <tr>
+            <th><img src="img/nodejs.png" style="width:200px;height:130px"></th>
+            <th><img src="img/postgresql.png" style="width:150px;height:150px"></th>
+            <th><img src="img/mongodb.png" style="width:150px;height:180px"></th>
+            <th><img src="img/sass.png"></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <a name="work"></a>
+    <h1 class="worktitle">Work</h1>
+     <div class="grid">
+        <!-- Grid items will live here -->
+        <div class="grid__item" onclick="location.href='myflix.html'"; onmouseover="" style="cursor: pointer;">
+
+          <h2>Myflix movie App</h2>
+          <p>
+             This single-page-application contains several movies and their infos. Users can register and add movies to their favorites list.
+          </p>
+          <p> Technologies used: MongoDB, Express, React, NodeJs</p><br><br>
+        <!--  <img src= "img/myflix.png" class="work_image"><br> -->
+          <a href="https://myflixapp.herokuapp.com/" class="work_link">Go to app</a><br>
+          <a href="https://github.com/sailesh-mahat/movie_api" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Search App</h2>
+          <p> A search app which is basically a google clone built using React and hosted with Google Firebase. It uses the Google 
+            Custom Search API and can fetch actual web results. </p>
+          <p>Technologies used: React-Native, Firebase</p>
+          <a href="https://search-app-3b04c.web.app/search" class="work_link">Try app</a><br>
+          <a href="https://github.com/sailesh-mahat/google-clone" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Nat-chat</h2>
+          <p> A chat app for mobile devices created using React Native. The app provides users with a
+            chat interface and the possibility to share images and their location.</p>
+          <p>Technologies used: React-Native, Firebase</p>
+          <!--  <img src= "img/todo.png" class="work_image"><br>
+          <a href="https://sailesh-mahat.github.io/meetup/" class="work_link">Try app</a><br>-->
+          <a href="https://github.com/sailesh-mahat/react-native-chat-app" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Meetup App</h2>
+          <p>
+            A serverless, progressive web application (PWA) built with React using test-driven
+            development (TDD) technique. The application uses the Meetup API to fetch upcoming events
+            for a selected city.          </p>
+          <p>Technologies used: React, Serverless functions, AWS Lambda, Recharts</p>
+          <!--  <img src= "img/todo.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/meetup/" class="work_link">Go to app</a><br>
+          <a href="https://github.com/sailesh-mahat/meetup" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Pokedex</h2>
+          <p>
+            This app contains a list of Pokemons whose features can be seen after clicking on their buttons.It was created with the help of an external API.</p>
+            <p>Technologies used: Javascript, jQuery</p>
+          <!--  <img src= "img/pokedex.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/Pokedex-jQuery/" class="work_link">Go to app</a><br>
+          <a href="https://github.com/sailesh-mahat/Pokedex-jQuery" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>My awesome quiz app</h2>
+          <p>
+            A user is able to take quizzes on different topics and the result is also calculated at the end.
+          </p>
+          <p>Technologies used: Angular</p>
+        <!--    <img src= "img/quiz.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/my-awesome-quiz-app/welcome" class="work_link">Go to app</a><br>
+          <a href="https://github.com/sailesh-mahat/my-awesome-quiz-app" class="work_link">See project on GitHub</a>
+        </div>
+        <div class="grid__item">
+          <h2>To-do App</h2>
+          <p>
+            It is a basic to-do app where one can add, remove, check-off their daily to-do activities.
+          </p>
+          <p>Technologies used: Vue.js</p>
+          <!--  <img src= "img/todo.png" class="work_image"><br> -->
+          <a href="https://todoapp-vuejs.netlify.com/" class="work_link">Go to app</a><br>
+          <a href="https://github.com/sailesh-mahat/todo-app-vue.js" class="work_link">See project on GitHub</a>
+        </div>
+
+
+        <div class="grid__item">
+          <h2>More Coming Soon</h2>
+          <p></p>
+          <p></p>
+          <!--  <img src= "img/todo.png" class="work_image"><br>
+          <a href="https://sailesh-mahat.github.io/meetup/" class="work_link">Try app</a><br>
+          <a href="https://github.com/sailesh-mahat/meetup" class="work_link">See project on GitHub</a>-->
+        </div>
+
+        <div class="grid__item">
+          <h2>Your Project?</h2>
+          <p>
+            Do you have a project for me. I am available for freelance or contract work. Feel free to contact me
+            if you need to get your website done or an app built.
+          </p>
+          <a href="#contact" class="work_link">Contact me</a>
+        </div>
+    </div>
+  </section>
+  <a name="contact"></a>
+  <div style="text-align:center;background-color:lightgray">
+  <h1 class="contacttitle">Contact</h1>
+    Email: <a href="mailto:sailesh@live.com">sailesharsenal@gmail.com</a><br>
+    Skype: <a href="skype:mahat.sailesh"> sailesh.mahat</a><br>
+    <a href="mailto:sailesharsenal@gmail.com">Send me an email</a><br><br>
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://twitter.com/slashmahat"><img src="img/iconmonstr-twitter-3.svg" alt="Twitter logo"></a>
+      <a href="https://github.com/sailesh-mahat"><img src="img/iconmonstr-github-1.svg" alt="Github logo"></a>
+      <a href="https://www.linkedin.com/in/sailesh-mahat-79518b53/"><img src="img/iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></a>
+    </div>
+  </div>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
